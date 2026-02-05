@@ -193,16 +193,3 @@ h1 {
     font-size: 14px;
 }
 
-@media (max-width: 600px) {
-    .card {
-        padding: 30px 20px;
-    }
-    
-    h1 {
-        font-size: 26px;
-    }
-    
-    .card button {
-        font-size: 16px;
-    }
-}
