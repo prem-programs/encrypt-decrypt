@@ -1,16 +1,21 @@
 from flask import Flask, render_template, url_for, request
 from cryptography.fernet import Fernet
 import os 
+import base64
 
 # key handeling
-if os.path.exists("secret.bin"):
-    with open("secret.bin",'rb') as f:
-        key = f.read()
+env_key = os.environ.get("FERNET_KEY")
+if env_key:
+    key = base64.b64decode(env_key)
 else:
-    key=Fernet.generate_key()
-    with open("secret.bin",'wb')as f:
-        f.write(key)
-        
+    if os.path.exists("secret.bin"):
+        with open("secret.bin",'rb') as f:
+            key=f.read()
+    else:
+        key = Fernet.generate_key()
+        with open("secred.bin","wb")as f:
+            f.write(key)
+
 fernet=Fernet(key)
 app = Flask(__name__)
 
