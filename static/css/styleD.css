@@ -114,7 +114,7 @@ h1 {
     color: #a0aec0;
 }
 
-.card button {
+form button {
     border-radius: 12px;
     border: none;
     padding: 16px;
@@ -128,12 +128,12 @@ h1 {
     box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
 }
 
-.card button:hover {
+form button:hover {
     transform: translateY(-2px);
     box-shadow: 0 6px 20px rgba(102, 126, 234, 0.6);
 }
 
-.card button:active {
+form button:active {
     transform: translateY(0);
 }
 
@@ -173,16 +173,17 @@ h1 {
     font-weight: 700;
     color: #38b334;
     display: block;
-    margin-bottom: -21px;
+    margin-bottom: -33px;
     margin-top: -50px;
 }
 
-.output p {
+.output p{
     color: #2d3748;
+    font-size: 20px;
+    font-weight: 500;
     line-height: 1.6;
     margin: 0;
 }
-
 .output::-webkit-scrollbar {
     width: 8px;
 }
@@ -193,7 +194,7 @@ h1 {
     font-weight: 700;
     color: #4c51bf;
     display: block;
-    margin-bottom: 8px;
+    margin-bottom: -25px;
 }
 
 .output p {
@@ -201,6 +202,26 @@ h1 {
     line-height: 1.6;
     margin: 0;
 }
+
+#copy{
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    right: 10px;
+    top:22px;
+    border: 0px;
+}
+#copy:hover {
+    box-shadow: 1px 2px 9px 6px white;  
+}
+
+#copiedBtn{
+    background-color: #b3caf9;
+    position: absolute;
+    top: 24px;
+    right: 38px;
+}
+
 
 /* Empty state styling */
 .output:empty::after {
