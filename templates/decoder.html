@@ -47,7 +47,7 @@
         const Copied = document.getElementById("copiedBtn")
         btn.addEventListener("click",()=>{
             navigator.clipboard.writeText(content)
-            Copied.innerText = "Copied!"
+            Copied.innerText = "copied!"
             setTimeout(() => {
                 Copied.innerText=""; 
             }, 1000);

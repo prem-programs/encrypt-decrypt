@@ -195,6 +195,7 @@ form button:active {
 }
 
 #copiedBtn{
+    opacity: 75%;
     background-color: #aae6b1;
     position: absolute;
     top: 24px;
@@ -213,3 +214,11 @@ form button:active {
     font-size: 14px;
 }
 
+@media (max-width : 444px) {
+    #copiedBtn{
+        background-color: #aae6b1;
+        position: absolute;
+        top: 54px;
+        right: -3px;
+    }
+}

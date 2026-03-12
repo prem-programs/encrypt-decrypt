@@ -216,6 +216,7 @@ form button:active {
 }
 
 #copiedBtn{
+    opacity: 75%;
     background-color: #b3caf9;
     position: absolute;
     top: 24px;
@@ -244,5 +245,13 @@ form button:active {
     
     .card button {
         font-size: 16px;
+    }
+}
+@media (max-width : 444px) {
+    #copiedBtn{
+        background-color: #b3caf9;
+        position: absolute;
+        top: 54px;
+        right: -3px;
     }
 }
